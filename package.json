@@ -2,7 +2,7 @@
     "name": "prettier-stylelint-temp",
     "version": "0.4.2",
     "description": "code > prettier > stylelint > formatted code",
-    "repository": "hugomrdias/prettier-stylelint",
+    "repository": "isellsoap/prettier-stylelint",
     "main": "index.js",
     "bin": "./cli.js",
     "author": "Hugo Dias <mail@hugodias.me> (http://hugodias.me/)",
