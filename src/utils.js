@@ -6,7 +6,7 @@ const debug = require('debug')('prettier-stylelint:utils');
 const ignore = require('ignore');
 
 exports.arrify = function(val) {
-    if (val === null || val === undefined) {
+    if (val === null || typeof val === 'undefined') {
         return [];
     }
 
