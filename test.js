@@ -38,10 +38,7 @@ test('resolveConfig', t =>
     ));
 
 test('resolveConfig not found fallback process.cwd', (t) => {
-    const tempPath = tempWrite.sync(
-        'a[id="foo"] { content: "x"; }',
-        'test.css'
-    );
+    const tempPath = tempWrite.sync('a[id="foo"] { content: "x"; }', 'test.css');
 
     return resolveConfig({ filePath: tempPath }).then((config) => {
         t.is(config[1].rules['function-comma-newline-after'], null);
