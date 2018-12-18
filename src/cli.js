@@ -34,14 +34,25 @@ Default pattern when no arguments:
   **/*.{css,scss,less,sss}
 `,
     {
-        string: ['_', 'ignore', 'extension', 'cwd'],
-        boolean: ['stdin', 'write'],
-        default: {
-            cwd: process.cwd(),
-            write: false,
-            quiet: false
-        },
-        alias: { q: 'quiet' }
+        flags: {
+            _: { type: 'string' },
+            cwd: {
+                type: 'string',
+                default: process.cwd()
+            },
+            extension: { type: 'string' },
+            ignore: { type: 'string' },
+            quiet: {
+                type: 'boolean',
+                default: false,
+                alias: 'q'
+            },
+            stdin: { type: 'boolean' },
+            write: {
+                type: 'boolean',
+                default: false
+            }
+        }
     }
 );
 
