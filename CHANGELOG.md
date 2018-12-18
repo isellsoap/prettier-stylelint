@@ -1,3 +1,12 @@
+## [0.4.4](https://github.com/isellsoap/prettier-stylelint/compare/v0.4.3...v0.4.4) (2018-12-18)
+
+
+### Bug Fixes
+
+* correct options format for meow ([5104591](https://github.com/isellsoap/prettier-stylelint/commit/5104591))
+
+
+
 ## [0.4.3](https://github.com/isellsoap/prettier-stylelint/compare/v0.4.2...v0.4.3) (2018-12-13)
 
 
