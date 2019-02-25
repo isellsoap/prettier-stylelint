@@ -1,7 +1,18 @@
 # prettier-stylelint [![NPM Version](https://img.shields.io/npm/v/prettier-stylelint.svg)](https://www.npmjs.com/package/prettier-stylelint) [![NPM Downloads](https://img.shields.io/npm/dt/prettier-stylelint.svg)](https://www.npmjs.com/package/prettier-stylelint) [![NPM License](https://img.shields.io/npm/l/prettier-stylelint.svg)](https://www.npmjs.com/package/prettier-stylelint) [![Build Status](https://travis-ci.org/hugomrdias/prettier-stylelint.svg?branch=master)](https://travis-ci.org/hugomrdias/prettier-stylelint) [![codecov](https://codecov.io/gh/hugomrdias/prettier-stylelint/branch/master/graph/badge.svg)](https://codecov.io/gh/hugomrdias/prettier-stylelint)
+
+---
+
+**Please note:** This is a fork from the original [prettier-stylelint](https://github.com/hugomrdias/prettier-stylelint/) respository. The changes basically only include an updated set of the dependencies, in order to avoid a lot of warnings happening during build and format time. See also the following threads:
+
+-   [issue #3](https://github.com/hugomrdias/prettier-stylelint/issues/3#issuecomment-446919278)
+-   [issue #25](https://github.com/hugomrdias/prettier-stylelint/issues/25)
+-   [pull request #6](https://github.com/hugomrdias/prettier-stylelint/pull/6)
+
+---
+
 > Format your styles with ease!
 
-code > prettier > stylelint > formatted code   
+code > prettier > stylelint > formatted code
 
 prettier-stylelint attempts to create a prettier config based on the stylelint config, then format with prettier followed by stylelint --fix. So after that you should end up with formatted code with no linting errors.
 
@@ -13,8 +24,8 @@ npm install prettier-stylelint --save-dev
 ```
 
 ## Usage
-This package has a stylelint config to disable some rules that conflict with prettier.
 
+This package has a stylelint config to disable some rules that conflict with prettier.
 
 ```json
 "stylelint": {
@@ -30,11 +41,11 @@ This package has a stylelint config to disable some rules that conflict with pre
 
 ```
 
-After adding the disabling config you can just `prettier-stylelint --write` and its done. Check the CLI options below for more information.   
+After adding the disabling config you can just `prettier-stylelint --write` and its done. Check the CLI options below for more information.
 Also in a near future we should have support for prettier-stylelint in `prettier-vscode` follow this [PR](https://github.com/prettier/prettier-vscode/pull/218).
 
-
 ### API
+
 ```js
 const format = require('prettier-eslint')
 const sourceCode = 'a[id="foo"] { content: "x"; }'
@@ -44,19 +55,18 @@ const options = {
 const formatted = format(options)
 
 
-// formatted 
+// formatted
 a[id='foo'] {
     content: 'x';
 }
-```   
+```
 
 ### CLI Options
 
 The cli automatically ignores `.gitignore` and `.prettierignore`.
 
->**NOTE:** It is recommended that you keep your files under source control and committed
+> **NOTE:** It is recommended that you keep your files under source control and committed
 > before running `prettier-stylelint --write` as it will overwrite your files!
-
 
 ```
 Usage
@@ -82,9 +92,9 @@ Default pattern when no arguments:
 
 ## Related
 
-- [prettier-vscode](https://github.com/esbenp/prettier-vscode) - prettier vscode extension
-- [prettier-eslint](https://github.com/prettier/prettier-eslint) - the inspiration for this package
-- [stylelint](https://github.com/stylelint/stylelint) - the linter ^^
+-   [prettier-vscode](https://github.com/esbenp/prettier-vscode) - prettier vscode extension
+-   [prettier-eslint](https://github.com/prettier/prettier-eslint) - the inspiration for this package
+-   [stylelint](https://github.com/stylelint/stylelint) - the linter ^^
 
 ## License
 
