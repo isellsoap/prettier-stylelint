@@ -44,17 +44,13 @@
     "dependencies": {
         "cosmiconfig": "^5.0.7",
         "debug": "^4.1.0",
-        "get-stdin": "^6.0.0",
         "globby": "^8.0.1",
         "ignore": "^5.0.4",
-        "import-local": "^2.0.0",
-        "meow": "^5.0.0",
         "pify": "^4.0.1",
         "prettier": "^1.7.0",
         "resolve-from": "^4.0.0",
         "stylelint": "^9.9.0",
         "temp-write": "^3.3.0",
-        "tempy": "^0.2.1",
         "update-notifier": "^2.2.0"
     },
     "eslintConfig": {
