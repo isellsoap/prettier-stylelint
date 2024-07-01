@@ -39,7 +39,11 @@
         "np": "^3.0.4",
         "npm-run-all": "^4.1.1",
         "nyc": "^13.1.0",
-        "stylelint-config-recommended": "^2.1.0"
+        "stylelint-config-recommended": "^2.1.0",
+	"import-local": "^2.0.0",
+        "meow": "^5.0.0",
+	"get-stdin": "^6.0.0",
+	"tempy": "^0.2.1"
     },
     "dependencies": {
         "cosmiconfig": "^5.0.7",
